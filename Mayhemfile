@@ -1,0 +1,5 @@
+project: rnshah9/psn00bsdk
+target: elf2cpe
+
+cmds:
+  - cmd: /repo/tools/util/elf2cpe @@
