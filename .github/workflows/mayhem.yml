@@ -59,7 +59,8 @@ jobs:
       fail-fast: false
       matrix:
         mayhemfile:
-          - mayhem/Mayhemfile
+          - mayhem/Mayhemfile_AddFileEntry
+          - mayhem/Mayhemfile_elf2cpe
 
     steps:
       - uses: actions/checkout@v3
