@@ -1,5 +1,7 @@
 project: psn00bsdk
 target: elf2cpe
+testsuite:
+  - file://mayhem/corpus
 
 cmds:
   - cmd: /elf2cpe @@
