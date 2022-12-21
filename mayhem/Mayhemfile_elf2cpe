@@ -1,0 +1,5 @@
+project: psn00bsdk
+target: elf2cpe
+
+cmds:
+  - cmd: /elf2cpe @@
