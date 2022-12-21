@@ -1,0 +1,6 @@
+project: psn00bsdk
+target: addfileentry
+
+cmds:
+  - cmd: /fuzz_AddFileEntry
+    libfuzzer: true
