@@ -1,0 +1,10 @@
+project: psn00bsdk
+target: elf2cpe
+
+# elf2cpe is fuzzed in-process via the libFuzzer harness (mayhem/fuzz_elf2cpe.c), not as a file-input
+# @@ target. The converter's stack-buffer overflow is trivially reachable, which saturates an mfuzz
+# corpus with crashes and prevents Mayhem's post-run coverage finalization (edges -> 0). libFuzzer
+# reports edge coverage from in-process SanitizerCoverage during the run, so it finalizes reliably.
+cmds:
+  - cmd: /mayhem/fuzz_elf2cpe
+    libfuzzer: true
